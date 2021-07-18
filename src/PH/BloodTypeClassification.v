@@ -15,20 +15,21 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: glycemicIndexCalculator
+---  Module Name: bloodTypeClassification
 -----------------------------------------------------------*/
-`timescale 1 ns/1 ns
-module glycemicIndexCalculator(
- bloodSensor,
- glycemicIndex);
-input [7:0] bloodSensor;
-output [3:0] glycemicIndex;
+module bloodTypeClassification(
+		input [2:0] bloodType,
+		output bloodClass
+    );
 
-	wire [7:0] absoluteValue;
 	
-	//calculate absolute value of bloodSensor
-	absoluteCalculator cal(bloodSensor, absoluteValue);
-	//count ones of the absoluteValue
-	countingOnes count(absoluteValue, glycemicIndex);
+	wire [3:0] in;  //input of the 4x1 mux
+	wire [1:0] sel; //selector of the 4x1 mux
+	supply0 zero;
+	supply1 one;
+	assign in = {zero, bloodType[2], bloodType[1], bloodType[0]};
+	assign sel = {one, zero};  //if in[2] or (bloodType[2]) equals 1 it means it is of type 1,
+										//otherwise it is of type 0
+	multiplexer4x1 mux(in, sel, bloodClass);
 	
 endmodule
