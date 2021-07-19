@@ -15,11 +15,11 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: test bench of fallingDetector 
+---  Module Name: test bench of fsm 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-// test bench of fallingDetector
+// test bench of fsm
 module tb_fsm();
     
     // Inputs

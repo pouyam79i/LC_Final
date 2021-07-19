@@ -21,7 +21,7 @@
 
 // register
 module register (
-	input        res ,
+	input        rst ,
 	input        clk ,
 	input        en ,
 	input  [6:0] din ,
@@ -39,7 +39,7 @@ module register (
 	// sequentioal_circuit of 7-bit register
 	always @ (posedge clk or posedge rst) begin
 		// Reset bits when rst = 1
-		if (rst) qout = 4'b0000;
+		if (rst) qout = 7'b0000000;
 		// Writes data when en = 1 and rst = 0
 		else if (en) qout = din;	 		
 	end
