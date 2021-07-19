@@ -15,20 +15,21 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: glycemicIndexCalculator
+---  Module Name: multiplexer2x1
 -----------------------------------------------------------*/
-`timescale 1 ns/1 ns
-module glycemicIndexCalculator(
- bloodSensor,
- glycemicIndex);
-input [7:0] bloodSensor;
-output [3:0] glycemicIndex;
-
-	wire [7:0] absoluteValue;
+module multiplexer2x1 (
+	input [1:0] in ,
+	input sel ,
+	output out
+);
 	
-	//calculate absolute value of bloodSensor
-	absoluteCalculator cal(bloodSensor, absoluteValue);
-	//count ones of the absoluteValue
-	countingOnes count(absoluteValue, glycemicIndex);
+	wire selnot;
+	not (selnot, sel);
+
+	wire w1, w0;
+	and (w0, selnot, in[0]),
+	    (w1, sel, in[1]);
+		 
+	or (out, w0, w1);  
 	
 endmodule

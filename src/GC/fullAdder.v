@@ -4,7 +4,7 @@
 --  Department of Computer Engineering (CE-AUT)
 --  https://ce[dot]aut[dot]ac[dot]ir
 --  *******************************************************
---  All Rights reserved (C) 2020-2021
+--  All Rights reserved (C) 2019-2020
 --  *******************************************************
 --  Student ID  : 9831059
 --  Student Name: Abolfazl Moradi Feijani
@@ -15,20 +15,26 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: glycemicIndexCalculator
+---  Module Name: Full Adder Gate Level
+---  Description: Lab 07 Part 1
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-module glycemicIndexCalculator(
- bloodSensor,
- glycemicIndex);
-input [7:0] bloodSensor;
-output [3:0] glycemicIndex;
 
-	wire [7:0] absoluteValue;
+module fullAdder (
+	input a ,
+	input b ,
+	input ci ,
+	output s ,
+	output co
+);
+
+	wire x, y, w, z;
 	
-	//calculate absolute value of bloodSensor
-	absoluteCalculator cal(bloodSensor, absoluteValue);
-	//count ones of the absoluteValue
-	countingOnes count(absoluteValue, glycemicIndex);
+	
+	or (x, a, b);
+	and (y, x, ci);
+	and (w, a, b);
+	xor (s, a, b, ci);
+	or (co, w, y);
 	
 endmodule
