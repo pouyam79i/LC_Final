@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2020-2021
 --  *******************************************************
---  Student ID  : 9829039   - 9831007 - 9831xxxx
---  Student Name: Pouya     - Mehran  - Abolfazl
---  Student Mail: Mohammadi - Aksari  - Moradi Feijani
+--  Student ID  :     9829039   - 9831007 - 9831059
+--  Student Name:     Pouya     - Mehran  - Abolfazl
+--  Student Lastname: Mohammadi - Aksari  - Moradi Feijani
 --  *******************************************************
 --  Additional Comments:
 --  
