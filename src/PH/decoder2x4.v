@@ -15,13 +15,24 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: pressureAbnormalityDetector 
+---  Module Name: decoder2x4
 -----------------------------------------------------------*/
-`timescale 1 ns/1 ns
-module pressureAbnormalityDetector(
- pressureData,
- presureAbnormality);
-input [5:0] pressureData;
-output presureAbnormality;
- // write your code here, please.
+module decoder2x4 (
+	input [1:0] in ,
+	input en ,
+	output [3:0] dout
+);
+	
+	wire in1not, in0not;
+	
+	not (in1not, in[1]),
+		 (in0not, in[0]);
+		 
+		 
+	and (dout[0], in1not, in0not,en),	 
+	    (dout[1], in1not, in[0],en),	 
+	    (dout[2], in[1], in0not,en),	 
+	    (dout[3], in[1], in[0],en);
+		 
+
 endmodule

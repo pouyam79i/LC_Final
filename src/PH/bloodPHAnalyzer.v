@@ -15,13 +15,27 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: pressureAbnormalityDetector 
+---  Module Name: bloodPHAnalyzer
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-module pressureAbnormalityDetector(
- pressureData,
- presureAbnormality);
-input [5:0] pressureData;
-output presureAbnormality;
- // write your code here, please.
+module bloodPHAnalyzer(
+ bloodPH,
+ abnormalityP,
+ abnormalityQ);
+ 
+	input [3:0] bloodPH;
+	output abnormalityP;
+	output abnormalityQ;
+	
+	wire [15:0] decodedPH; //decoded PH number
+	supply1 one;
+	
+	//receive decoded PH number
+	decoder4x16 dec(bloodPH, one, decodedPH); 
+	
+	//abnormlityP is 1 if PH is not 7 or 8
+	nor (abnormalityP, decodedPH[7], decodedPH[8]);
+	//abnormlityP is 1 if PH is not 6, 7, 8 or 9
+	nor (abnormalityQ, decodedPH[6], decodedPH[7], decodedPH[8], decodedPH[9]);
+	
 endmodule

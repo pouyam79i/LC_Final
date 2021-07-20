@@ -15,13 +15,37 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: pressureAbnormalityDetector 
+---  Module Name: test
 -----------------------------------------------------------*/
-`timescale 1 ns/1 ns
-module pressureAbnormalityDetector(
- pressureData,
- presureAbnormality);
-input [5:0] pressureData;
-output presureAbnormality;
- // write your code here, please.
+
+module test;
+
+	// Inputs
+	reg [7:0] bloodSensor;
+
+	// Outputs
+	wire [3:0] glycemicIndex;
+
+	// Instantiate the Unit Under Test (UUT)
+	glycemicIndexCalculator uut (
+		.bloodSensor(bloodSensor), 
+		.glycemicIndex(glycemicIndex)
+	);
+
+	initial begin
+		// Initialize Inputs
+		bloodSensor = 8'b00000000;
+		#100;
+      bloodSensor = 8'b10101010;
+		#100;
+      bloodSensor = 8'b11100011;
+		#100;
+      bloodSensor = 8'b01010101;
+		#100;
+      bloodSensor = 8'b11100000;
+		#100;
+      $finish;
+	end
+      
 endmodule
+
