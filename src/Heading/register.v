@@ -21,11 +21,11 @@
 
 // register
 module register (
-	input        rst ,
-	input        clk ,
-	input        en ,
-	input  [6:0] din ,
-	output [6:0] qout
+	input        rst ,		// Reset
+	input        clk ,		// Clock
+	input        en ,		// Enable
+	input  [6:0] din ,		// Data in (7-bit)
+	output [6:0] qout		// Data out (7-bit)
 );
 
 	// 7-bit register

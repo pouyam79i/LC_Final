@@ -15,51 +15,54 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: test bench of heading system
+---  Module Name: test bench of register
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-// test bench of heading system
-module tb_heading();
+// test bench of register
+module tb_register();
     
     // Inputs
-    reg confirm;     // confirm key
-    reg request;     // request key
-    reg clock;       // clock input of system -> set to posedge
-    reg [7:0] inputData;   // input data (8-bit)
+	reg rst;
+	reg clk;
+	reg en;
+	reg [6:0] din;
 
     // Result container
-    wire [6:0] dataP;      // output data of P register (7-bit)
-    wire [6:0] dataQ;      // output data of Q register (7-bit)
+	wire [6:0] qout;
 
     // unit under test
-    heading uut(confirm, request, clock, inputData, dataP, dataQ);
+    register uut(rst, clk, en, din, qout);
 
     // clock generator
     initial begin
-        clock = 0;
+        clk = 0;
         forever begin
-            #50 clock = ~clock;
+            #50 clk = ~clk;
         end
     end
 
     // testing
     initial begin
-        inputData = 0;
-        request = 0;
-        confirm = 0;
+        en = 0;
+        din = 5;
+        rst = 1;
         #100;
-        request = 1;
+        din = 10;
+        en = 1;
         #100;
-        inputData = 8'b00100100;		
-        confirm = 1;
+        en = 0;
+        rst = 0;
         #100;
-        confirm = 0;
+        en = 1;
+        din = 15;
         #100;
-        confirm = 1;
-        inputData = 8'b00101110;	
-        #200;
-        request = 0;
+        din = 30;
+        #100;
+        en = 0;
+        din = 7;
+        #100;
+        din = 0;
         #100;
         $finish;
     end

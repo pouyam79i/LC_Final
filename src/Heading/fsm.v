@@ -92,7 +92,7 @@ module fsm (
 					dout[4] = pass_data[4];
 					dout[5] = pass_data[5];
 					dout[6] = pass_data[6];
-					state = 3'b110;
+					state = 3'b110;		// State D
 					// Saving in Q
 					if(pass_data[7]) begin	
 						en_P = 0;
@@ -104,11 +104,6 @@ module fsm (
 						en_Q = 0;
 					end
 				end
-			end
-            // State D
-            else if (state == 3'b110) begin
-                en_P = 0;
-				en_Q = 0;
 			end
 		end
 	end
