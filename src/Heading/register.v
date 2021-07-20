@@ -15,29 +15,33 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: fallingDetector 
+---  Module Name: Register 7 bit -> used in heading system
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module fallingDetector(
-   fdSensorValue,
-   fdFactoryValue,
-   fallDetected
- );
+// register
+module register (
+	input        rst ,		// Reset
+	input        clk ,		// Clock
+	input        en ,		// Enable
+	input  [6:0] din ,		// Data in (7-bit)
+	output [6:0] qout		// Data out (7-bit)
+);
 
-   input [7:0] fdSensorValue;      // First input of comparator
-   input [7:0] fdFactoryValue;     // Second input of comparator
-   output fallDetected;            // Output of fallDetected sensor
-   
-   // Container wires
-   wire ltContainer;
-   wire eqContainer;
-   wire gtContainer;
+	// 7-bit register
+	reg [6:0] qout;
 
-   // 8-bit container module
-   comparator_8bit fdComparator(fdSensorValue, fdFactoryValue, 1'b0, 1'b1, 1'b0, ltContainer, eqContainer, gtContainer);
+	// Setting default values
+	initial begin
+		qout = 0;
+	end
 
-   // result producer
-   or result(fallDetected, eqContainer, gtContainer);
+	// sequentioal_circuit of 7-bit register
+	always @ (posedge clk or posedge rst) begin
+		// Reset bits when rst = 1
+		if (rst) qout = 7'b0000000;
+		// Writes data when en = 1 and rst = 0
+		else if (en) qout = din;	 		
+	end
 
 endmodule

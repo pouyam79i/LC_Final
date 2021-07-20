@@ -15,29 +15,29 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: fallingDetector 
+---  Module Name: heading
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module fallingDetector(
-   fdSensorValue,
-   fdFactoryValue,
-   fallDetected
+// heading system
+module heading(
+    input confirm,     	 	 // confirm key
+    input request,     	     // request key
+    input clock,  		     // clock input of system -> set to posedge
+    input [7:0] inputData,   // input data (8-bit)
+    output [6:0] dataP,      // output data of P register (7-bit)
+    output [6:0] dataQ       // output data of Q register (7-bit)
  );
 
-   input [7:0] fdSensorValue;      // First input of comparator
-   input [7:0] fdFactoryValue;     // Second input of comparator
-   output fallDetected;            // Output of fallDetected sensor
-   
-   // Container wires
-   wire ltContainer;
-   wire eqContainer;
-   wire gtContainer;
+	// Wires
+	wire en_Q;
+	wire en_P;
+	wire [6:0] doutFSM;
+	wire [2:0] state;    // Used to acknowledge current state (read in test mode)
 
-   // 8-bit container module
-   comparator_8bit fdComparator(fdSensorValue, fdFactoryValue, 1'b0, 1'b1, 1'b0, ltContainer, eqContainer, gtContainer);
-
-   // result producer
-   or result(fallDetected, eqContainer, gtContainer);
+	// Modules
+	fsm fsmModule(1'b0, clock, request, confirm, inputData, en_Q, en_P, doutFSM, state);	
+	register regDataP(1'b0, clock, en_P, doutFSM, dataP);
+	register regDataQ(1'b0, clock, en_Q, doutFSM, dataQ);				
 
 endmodule

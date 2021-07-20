@@ -15,29 +15,56 @@
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: fallingDetector 
+---  Module Name: test bench of register
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
-module fallingDetector(
-   fdSensorValue,
-   fdFactoryValue,
-   fallDetected
- );
+// test bench of register
+module tb_register();
+    
+    // Inputs
+	reg rst;
+	reg clk;
+	reg en;
+	reg [6:0] din;
 
-   input [7:0] fdSensorValue;      // First input of comparator
-   input [7:0] fdFactoryValue;     // Second input of comparator
-   output fallDetected;            // Output of fallDetected sensor
-   
-   // Container wires
-   wire ltContainer;
-   wire eqContainer;
-   wire gtContainer;
+    // Result container
+	wire [6:0] qout;
 
-   // 8-bit container module
-   comparator_8bit fdComparator(fdSensorValue, fdFactoryValue, 1'b0, 1'b1, 1'b0, ltContainer, eqContainer, gtContainer);
+    // unit under test
+    register uut(rst, clk, en, din, qout);
 
-   // result producer
-   or result(fallDetected, eqContainer, gtContainer);
+    // clock generator
+    initial begin
+        clk = 0;
+        forever begin
+            #50 clk = ~clk;
+        end
+    end
+
+    // testing
+    initial begin
+        en = 0;
+        din = 5;
+        rst = 1;
+        #100;
+        din = 10;
+        en = 1;
+        #100;
+        en = 0;
+        rst = 0;
+        #100;
+        en = 1;
+        din = 15;
+        #100;
+        din = 30;
+        #100;
+        en = 0;
+        din = 7;
+        #100;
+        din = 0;
+        #100;
+        $finish;
+    end
 
 endmodule
