@@ -6,9 +6,9 @@
 --  *******************************************************
 --  All Rights reserved (C) 2020-2021
 --  *******************************************************
---  Student ID  : 9831059
---  Student Name: Abolfazl Moradi Feijani
---  Student Mail: abolfazl.moradi.feijani@gmail.com
+--  Student ID  :     9829039   - 9831007 - 9831059
+--  Student Name:     Pouya     - Mehran  - Abolfazl
+--  Student Lastname: Mohammadi - Aksari  - Moradi Feijani
 --  *******************************************************
 --  Additional Comments:a module to add a single bit to a
 --  4bit number 
