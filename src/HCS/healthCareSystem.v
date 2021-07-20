@@ -32,8 +32,10 @@ module healthCareSystem(
  presureAbnormality,
  bloodAbnormality,
  fallDetected,
- temperatureAbnormality
+ temperatureAbnormality,
+ glycemicIndex
  );
+    // Inputs
     input [5:0] pressureData;       // Pressure data
     input [3:0] bloodPH;            // PH of blood
     input [2:0] bloodType;          // Type of blood
@@ -43,6 +45,7 @@ module healthCareSystem(
     input [4:0] factotyBaseTemp;    // factory base temp.
     input [3:0] factotyTempCoef;    // factory temp. coef.
     input [3:0] tempSensorValue;    // temp. sensor value
+    // Outputs
     output presureAbnormality;      // presureAbnormality result
     output bloodAbnormality;        // bloodAbnormality result
     output fallDetected;            // fallDetected result
