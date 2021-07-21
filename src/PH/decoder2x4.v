@@ -6,24 +6,33 @@
 --  *******************************************************
 --  All Rights reserved (C) 2020-2021
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  :     9829039   - 9831007 - 9831059
+--  Student Name:     Pouya     - Mehran  - Abolfazl
+--  Student Lastname: Mohammadi - Aksari  - Moradi Feijani
 --  *******************************************************
 --  Additional Comments:
 --
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: bloodAbnormalityDetector 
+---  Module Name: decoder2x4
 -----------------------------------------------------------*/
-`timescale 1 ns/1 ns
-module bloodAbnormalityDetector(
- bloodPH,
- bloodType,
- bloodAbnormality);
-input [3:0] bloodPH;
-input [2:0] bloodType;
-output bloodAbnormality;
- // write your code here, please.
+module decoder2x4 (
+	input [1:0] in ,
+	input en ,
+	output [3:0] dout
+);
+	
+	wire in1not, in0not;
+	
+	not (in1not, in[1]),
+		 (in0not, in[0]);
+		 
+		 
+	and (dout[0], in1not, in0not,en),	 
+	    (dout[1], in1not, in[0],en),	 
+	    (dout[2], in[1], in0not,en),	 
+	    (dout[3], in[1], in[0],en);
+		 
+
 endmodule

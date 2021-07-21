@@ -6,22 +6,30 @@
 --  *******************************************************
 --  All Rights reserved (C) 2020-2021
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  :     9829039   - 9831007 - 9831059
+--  Student Name:     Pouya     - Mehran  - Abolfazl
+--  Student Lastname: Mohammadi - Aksari  - Moradi Feijani
 --  *******************************************************
 --  Additional Comments:
 --
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: parityErrorChecker 
+---  Module Name: multiplexer2x1
 -----------------------------------------------------------*/
-`timescale 1 ns/1 ns
-module parityErrorChecker(
- data,
- error);
-input [5:0] data;
-output error;
- // write your code here, please.
+module multiplexer2x1 (
+	input [1:0] in ,
+	input sel ,
+	output out
+);
+	
+	wire selnot;
+	not (selnot, sel);
+
+	wire w1, w0;
+	and (w0, selnot, in[0]),
+	    (w1, sel, in[1]);
+		 
+	or (out, w0, w1);  
+	
 endmodule
