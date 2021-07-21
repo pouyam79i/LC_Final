@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="project" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tb_hcs (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_hcs.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000df000000020000000000000000000000000200000064ffffffff000000810000000300000002000000df0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>tb_hcs (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_hcs.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000003d00000001000000000000002100000001000000000000005d0000000100000000000002170000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/BAD - bloodAbnormalityDetector</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/FD - fallingDetector</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder1 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder2 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder3 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder4 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder5 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder6 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder7 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder8 - Adder4bit</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/PAD - pressureAbnormalityDetector</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/TAD - temperatureAbnormalityDetector</ClosedNode>
+         <ClosedNode>/tb_heading E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_heading.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tb_heading (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_heading.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000ce000000020000000000000000000000000200000064ffffffff000000810000000300000002000000ce0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>tb_heading (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_heading.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+</Project>

@@ -58,9 +58,59 @@ module tb_hcs();
         glycemicIndex
     );
 
+    // testing
     initial begin
-
-
+        // initial values 
+        pressureData = ;
+        bloodPH = ;
+        bloodType = ;
+        fdSensorValue = 27;
+        fdFactoryValue = 50;
+        bloodSensor = ;
+        factotyBaseTemp = ;
+        factotyTempCoef = ;
+        tempSensorValue = ;
+        #100;
+        // changing input values - phase 1
+        pressureData = ;
+        bloodPH = ;
+        bloodType = ;
+        fdSensorValue = 50;
+        bloodSensor = ;
+        tempSensorValue = ;
+        #100;
+        // changing input values - phase 2
+        pressureData = ;
+        bloodPH = ;
+        bloodType = ;
+        fdSensorValue = 50;
+        bloodSensor = ;
+        tempSensorValue = ;
+        #100;
+        // changing input values - phase 3
+        pressureData = ;
+        bloodPH = ;
+        bloodType = ;
+        fdSensorValue = 50;
+        bloodSensor = ;
+        tempSensorValue = ;
+        #100;
+        // changing input values - phase 4
+        pressureData = ;
+        bloodPH = ;
+        bloodType = ;
+        fdSensorValue = 50;
+        bloodSensor = ;
+        tempSensorValue = ;
+        #100;
+        // changing input values - phase 5
+        pressureData = ;
+        bloodPH = ;
+        bloodType = ;
+        fdSensorValue = 50;
+        bloodSensor = ;
+        tempSensorValue = ;
+        #100;
         $finish;
     end
 

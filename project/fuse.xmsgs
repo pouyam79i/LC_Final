@@ -5,10 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/University/Logic Circuit/Lab/Prject/LC_Final/project/co.v" Line 34: Concatenation with unsized literal; will interpret as 32 bits
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/University/Logic Circuit/Lab/Prject/LC_Final/project/register.v" Line 32: Redeclaration of ansi port <arg fmt="%s" index="1">qout</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="327" delta="unknown" >"E:/University/Logic Circuit/Lab/Prject/LC_Final/project/absC.v" Line 30: Concatenation with unsized literal; will interpret as 32 bits
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/University/Logic Circuit/Lab/Prject/LC_Final/project/fsm.v" Line 36: Redeclaration of ansi port <arg fmt="%s" index="1">en_Q</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/University/Logic Circuit/Lab/Prject/LC_Final/project/fsm.v" Line 37: Redeclaration of ansi port <arg fmt="%s" index="1">en_P</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/University/Logic Circuit/Lab/Prject/LC_Final/project/fsm.v" Line 38: Redeclaration of ansi port <arg fmt="%s" index="1">dout</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/University/Logic Circuit/Lab/Prject/LC_Final/project/fsm.v" Line 40: Redeclaration of ansi port <arg fmt="%s" index="1">state</arg> is not allowed
 </msg>
 
 </messages>
