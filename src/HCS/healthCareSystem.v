@@ -19,6 +19,7 @@
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
 
+// Health Care System 
 module healthCareSystem(
  pressureData,
  bloodPH,
@@ -31,19 +32,33 @@ module healthCareSystem(
  presureAbnormality,
  bloodAbnormality,
  fallDetected,
- temperatureAbnormality);
-input [5:0] pressureData;
-input [3:0] bloodPH;
-input [2:0] bloodType;
-input [7:0] fdSensorValue;
-input [7:0] fdFactoryValue;
-input [7:0] bloodSensor;
-input [4:0] factotyBaseTemp;
-input [3:0] factotyTempCoef;
-input [3:0] tempSensorValue;
-output presureAbnormality;
-output bloodAbnormality;
-output fallDetected;
-output temperatureAbnormality;
- // write your code here, please.
+ temperatureAbnormality,
+ glycemicIndex
+ );
+    // Inputs
+    input [5:0] pressureData;       // Pressure data
+    input [3:0] bloodPH;            // PH of blood
+    input [2:0] bloodType;          // Type of blood
+    input [7:0] fdSensorValue;      // Falling detector sensor input    
+    input [7:0] fdFactoryValue;     // Falling detector factory value (STD)
+    input [7:0] bloodSensor;        // Blood sensor
+    input [4:0] factotyBaseTemp;    // factory base temp.
+    input [3:0] factotyTempCoef;    // factory temp. coef.
+    input [3:0] tempSensorValue;    // temp. sensor value
+    // Outputs
+    output presureAbnormality;      // presureAbnormality result
+    output bloodAbnormality;        // bloodAbnormality result
+    output fallDetected;            // fallDetected result
+    output temperatureAbnormality;  // temperatureAbnormality result
+    output [3:0] glycemicIndex;     // glycemicIndex result
+
+    // Module 2 - bloodAbnormalityDetector
+    bloodAbnormalityDetector BAD(bloodPH, bloodType, bloodAbnormality);
+
+    // Module 3 - fallingDetector
+    fallingDetector FDSensor(fdSensorValue, fdFactoryValue, fallDetected);
+
+    // Module 5 - glycemicIndexCalculator
+    glycemicIndexCalculator GIC(bloodSensor, glycemicIndex);
+
 endmodule
