@@ -61,55 +61,65 @@ module tb_hcs();
     // testing
     initial begin
         // initial values 
-        pressureData = ;
+        pressureData = 6'b000000;
         bloodPH = 4'b0110;
         bloodType = 3'b000;
         fdSensorValue = 50;
         fdFactoryValue = 10;
         bloodSensor = 8'b00000000;
-        factotyBaseTemp = ;
-        factotyTempCoef = ;
-        tempSensorValue = ;
+        factotyBaseTemp = 5'b11111; 
+        factotyTempCoef = 4'b0100; 
+        tempSensorValue = 4'b0100; 
         #100;
         // changing input values - phase 1
-        pressureData = ;
+        pressureData = 6'b100000;
         bloodPH = 4'b0110;
         bloodType = 3'b100;
         fdSensorValue = 49;
         bloodSensor = 8'b10101010;
-        tempSensorValue = ;
+        factotyBaseTemp = 5'b11111; 
+        factotyTempCoef = 4'b1000; 
+        tempSensorValue = 4'b0100;
         #100;
         // changing input values - phase 2
-        pressureData = ;
+        pressureData = 6'b011111;
         bloodPH = 4'b0111;
         bloodType = 3'b000;
         fdSensorValue = 50;
         bloodSensor = 8'b11100011;
-        tempSensorValue = ;
+        factotyBaseTemp = 5'b11111; 
+        factotyTempCoef = 4'b1100; 
+        tempSensorValue = 4'b1101;
         #100;
         // changing input values - phase 3
-        pressureData = ;
+        pressureData = 6'b111111;
         bloodPH = 4'b0111;
         bloodType = 3'b100;
         fdSensorValue = 51;
         bloodSensor = 8'b01010101;
-        tempSensorValue = ;
+        factotyBaseTemp = 5'b11001; 
+        factotyTempCoef = 4'b1100; 
+        tempSensorValue = 4'b0100;
         #100;
         // changing input values - phase 4
-        pressureData = ;
+        pressureData = 6'b001100;
         bloodPH = 4'b1100;
         bloodType = 3'b000;
         fdSensorValue = 60;
         bloodSensor = 8'b11100000;
-        tempSensorValue = ;
+        factotyBaseTemp = 5'b11001; 
+        factotyTempCoef = 4'b0110; 
+        tempSensorValue = 4'b1100;
         #100;
         // changing input values - phase 5
-        pressureData = ;
+        pressureData = 6'b101100;
         bloodPH = 4'b1100;
         bloodType = 3'b100;
         fdSensorValue = 70;
         bloodSensor = 8'b11100111;
-        tempSensorValue = ;
+        factotyBaseTemp = 5'b11001; 
+        factotyTempCoef = 4'b1000; 
+        tempSensorValue = 4'b1100;
         #100;
         $finish;
     end
