@@ -6,22 +6,33 @@
 --  *******************************************************
 --  All Rights reserved (C) 2020-2021
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  :     9829039   - 9831007 - 9831059
+--  Student Name:     Pouya     - Mehran  - Abolfazl
+--  Student Lastname: Mohammadi - Aksari  - Moradi Feijani
 --  *******************************************************
 --  Additional Comments:
 --
 --*/
 
 /*-----------------------------------------------------------
----  Module Name: pressureAnalyzer 
+---  Module Name: multiplexer2x1
 -----------------------------------------------------------*/
-`timescale 1 ns/1 ns
-module pressureAnalyzer(
- pData,
- pWarning);
-input [4:0] pData;
-output pDarning;
- // write your code here, please.
+module multiplexer2x1 (
+	input a ,
+	input b ,
+	input sel ,
+	output out
+);
+	
+	wire selnot;
+	
+	not (selnot, sel);
+
+	wire w1, w0;
+	
+	and (w0, selnot, a),
+	    (w1, sel, b);
+		 
+	or (out, w0, w1);  
+	
 endmodule
