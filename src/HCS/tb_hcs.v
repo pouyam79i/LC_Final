@@ -62,53 +62,53 @@ module tb_hcs();
     initial begin
         // initial values 
         pressureData = ;
-        bloodPH = ;
-        bloodType = ;
+        bloodPH = 4'b0110;
+        bloodType = 3'b000;
         fdSensorValue = 27;
         fdFactoryValue = 50;
-        bloodSensor = ;
+        bloodSensor = 8'b00000000;
         factotyBaseTemp = ;
         factotyTempCoef = ;
         tempSensorValue = ;
         #100;
         // changing input values - phase 1
         pressureData = ;
-        bloodPH = ;
-        bloodType = ;
+        bloodPH = 4'b0110;
+        bloodType = 3'b100;
         fdSensorValue = 50;
-        bloodSensor = ;
+        bloodSensor = 8'b10101010;
         tempSensorValue = ;
         #100;
         // changing input values - phase 2
         pressureData = ;
-        bloodPH = ;
-        bloodType = ;
+        bloodPH = 4'b0111;
+        bloodType = 3'b000;
         fdSensorValue = 50;
-        bloodSensor = ;
+        bloodSensor = 8'b11100011;
         tempSensorValue = ;
         #100;
         // changing input values - phase 3
         pressureData = ;
-        bloodPH = ;
-        bloodType = ;
+        bloodPH = 4'b0111;
+        bloodType = 3'b100;
         fdSensorValue = 50;
-        bloodSensor = ;
+        bloodSensor = 8'b01010101;
         tempSensorValue = ;
         #100;
         // changing input values - phase 4
         pressureData = ;
-        bloodPH = ;
-        bloodType = ;
+        bloodPH = 4'b1100;
+        bloodType = 3'b000;
         fdSensorValue = 50;
-        bloodSensor = ;
+        bloodSensor = 8'b11100000;
         tempSensorValue = ;
         #100;
         // changing input values - phase 5
         pressureData = ;
-        bloodPH = ;
-        bloodType = ;
+        bloodPH = 4'b1100;
+        bloodType = 3'b100;
         fdSensorValue = 50;
-        bloodSensor = ;
+        bloodSensor = 8'b11100111;
         tempSensorValue = ;
         #100;
         $finish;
