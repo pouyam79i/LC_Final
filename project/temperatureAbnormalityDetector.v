@@ -23,17 +23,21 @@ module temperatureAbnormalityDetector(
 	factotyBaseTemp,
 	factotyTempCoef,
 	tempSensorValue,
-	lowTempAbnormality,
-	highTempAbnormality);
+	tempAbnormality,
+	);
 	
 	input [4:0] factotyBaseTemp;
 	input [3:0] factotyTempCoef;
 	input [3:0] tempSensorValue;
-	output lowTempAbnormality;
-	output highTempAbnormality;
+	output tempAbnormality;
+
+	wire lowTempAbnormality;
+	wire highTempAbnormality;
 	
 	wire [7:0] temperature;
 	temperatureCalculator tc(factotyBaseTemp, tempSensorValue, factotyTempCoef, temperature);
 	temperatureAnalyzer ta(temperature, lowTempAbnormality, highTempAbnormality);
-	
+
+	or result(tempAbnormality, lowTempAbnormality, highTempAbnormality);
+
 endmodule

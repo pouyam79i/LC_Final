@@ -76,6 +76,7 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v</ClosedNode>
+         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/BAD - bloodAbnormalityDetector</ClosedNode>
          <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/BAD - bloodAbnormalityDetector/analizer - bloodPHAnalyzer</ClosedNode>
          <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/FD - fallingDetector</ClosedNode>
          <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator</ClosedNode>
@@ -88,17 +89,16 @@
          <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder7 - Adder4bit</ClosedNode>
          <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/GIC - glycemicIndexCalculator/count - countingOnes/adder8 - Adder4bit</ClosedNode>
          <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/PAD - pressureAbnormalityDetector</ClosedNode>
-         <ClosedNode>/tb_hcs E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_hcs.v/uut - healthCareSystem/TAD - temperatureAbnormalityDetector</ClosedNode>
          <ClosedNode>/tb_heading E:|University|Logic Circuit|Lab|Prject|LC_Final|project|tb_heading.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_heading (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_heading.v)</SelectedItem>
+         <SelectedItem>tb_hcs (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_hcs.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000ce000000020000000000000000000000000200000064ffffffff000000810000000300000002000000ce0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_heading (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_heading.v)</CurrentItem>
+      <CurrentItem>tb_hcs (E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_hcs.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -106,13 +106,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
