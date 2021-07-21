@@ -25,6 +25,8 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_hcs_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_hcs_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_heading_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_heading_isim_beh.exe"/>
@@ -38,7 +40,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1626879565" xil_pn:in_ck="-5148089895643223202" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1626879565">
+    <transform xil_pn:end_ts="1626897077" xil_pn:in_ck="7926995757670288797" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1626897077">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ParityErrorChecker.v"/>
@@ -60,6 +62,7 @@
       <outfile xil_pn:name="gic.v"/>
       <outfile xil_pn:name="heading.v"/>
       <outfile xil_pn:name="healthCareSystem.v"/>
+      <outfile xil_pn:name="multiplexer2x1_vesion2.v"/>
       <outfile xil_pn:name="multiplexer4x1.v"/>
       <outfile xil_pn:name="mux2x1.v"/>
       <outfile xil_pn:name="mux8bit.v"/>
@@ -71,11 +74,11 @@
       <outfile xil_pn:name="temperatureAnalyzer.v"/>
       <outfile xil_pn:name="temperatureCalculator.v"/>
     </transform>
-    <transform xil_pn:end_ts="1626879686" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="790386471986842140" xil_pn:start_ts="1626879686">
+    <transform xil_pn:end_ts="1626897126" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="790386471986842140" xil_pn:start_ts="1626897126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1626879686" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3569134765227506488" xil_pn:start_ts="1626879686">
+    <transform xil_pn:end_ts="1626897126" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3569134765227506488" xil_pn:start_ts="1626897126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -83,7 +86,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1626879686" xil_pn:in_ck="-5148089895643223202" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1626879686">
+    <transform xil_pn:end_ts="1626897081" xil_pn:in_ck="7926995757670288797" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1626897081">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ParityErrorChecker.v"/>
@@ -105,6 +108,7 @@
       <outfile xil_pn:name="gic.v"/>
       <outfile xil_pn:name="heading.v"/>
       <outfile xil_pn:name="healthCareSystem.v"/>
+      <outfile xil_pn:name="multiplexer2x1_vesion2.v"/>
       <outfile xil_pn:name="multiplexer4x1.v"/>
       <outfile xil_pn:name="mux2x1.v"/>
       <outfile xil_pn:name="mux8bit.v"/>
@@ -116,19 +120,25 @@
       <outfile xil_pn:name="temperatureAnalyzer.v"/>
       <outfile xil_pn:name="temperatureCalculator.v"/>
     </transform>
-    <transform xil_pn:end_ts="1626879692" xil_pn:in_ck="-5148089895643223202" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6885947836808864824" xil_pn:start_ts="1626879686">
+    <transform xil_pn:end_ts="1626897130" xil_pn:in_ck="7926995757670288797" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6885947836808864824" xil_pn:start_ts="1626897126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_heading_beh.prj"/>
       <outfile xil_pn:name="tb_heading_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1626879692" xil_pn:in_ck="-8566944384651700492" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8810811160119835819" xil_pn:start_ts="1626879692">
+    <transform xil_pn:end_ts="1626897130" xil_pn:in_ck="2374179195963202966" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8810811160119835819" xil_pn:start_ts="1626897130">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_heading_isim_beh.wdb"/>
     </transform>
   </transforms>

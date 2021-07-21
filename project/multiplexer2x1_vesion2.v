@@ -17,7 +17,7 @@
 /*-----------------------------------------------------------
 ---  Module Name: multiplexer2x1
 -----------------------------------------------------------*/
-module multiplexer2x1 (
+module multiplexer2x1_vesion2 (
 	input [1:0] in ,
 	input sel ,
 	output out

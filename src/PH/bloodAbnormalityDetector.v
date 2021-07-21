@@ -44,6 +44,6 @@ module bloodAbnormalityDetector(
 	
 	//if bloodClass is 1, abnormalityQ will be the output, if
 	//bloodClass is 0, abnormalityP will be the output
-	multiplexer2x1 mux(in, bloodClass, bloodAbnormality);
+	multiplexer2x1_vesion2 mux(in, bloodClass, bloodAbnormality);
 	 
 endmodule
