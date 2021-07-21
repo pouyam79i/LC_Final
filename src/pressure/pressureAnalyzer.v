@@ -23,6 +23,7 @@ module PressureAnalyzer(
 	input [4:0] pData,
 	output pWarning
 	);
+	//this is a function based on attached karno table to see which data is abnormal
 	assign pWarning = ~( (~pData[4] & pData[3]) | (pData[4] & ~pData[3] & ~pData[2]) | (pData[4] & ~pData[3] & ~pData[1]) | (pData[4] & ~pData[3] & ~pData[0]));
 endmodule
 	
