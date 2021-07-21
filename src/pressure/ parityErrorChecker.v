@@ -6,22 +6,22 @@
 --  *******************************************************
 --  All Rights reserved (C) 2020-2021
 --  *******************************************************
---  Student ID  : 
---  Student Name: 
---  Student Mail: 
+--  Student ID  : 9829039   - 9831007 - 9831059
+--  Student Name: Pouya     - Mehran  - Abolfazl
+--  Last Name:    Mohammadi - Aksari  - Moradi Feijani
 --  *******************************************************
 --  Additional Comments:
---
+--  	
 --*/
 
 /*-----------------------------------------------------------
 ---  Module Name: parityErrorChecker 
 -----------------------------------------------------------*/
 `timescale 1 ns/1 ns
-module parityErrorChecker(
- data,
- error);
-input [5:0] data;
-output error;
- // write your code here, please.
+
+module ParityErrorChecker(
+	input [5:0] Data, 
+	output notError
+	); 
+	assign notError = (Data[0] ^ Data[1] ^ Data[2] ^ Data[3] ^ Data[4] ^ Data[5]);	
 endmodule
