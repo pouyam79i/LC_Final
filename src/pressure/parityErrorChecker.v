@@ -23,5 +23,6 @@ module ParityErrorChecker(
 	input [5:0] Data, 
 	output notError
 	); 
+	// this is a function that check add parity with xor
 	assign notError = (Data[0] ^ Data[1] ^ Data[2] ^ Data[3] ^ Data[4] ^ Data[5]);	
 endmodule
