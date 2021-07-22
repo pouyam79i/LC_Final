@@ -57,7 +57,7 @@ module tb_heading();
         confirm = 0;
         #100;
         confirm = 1;
-        inputData = 8'b00101110;	
+        inputData = 8'b00111000;	
         #200;
         request = 0;
         #100;

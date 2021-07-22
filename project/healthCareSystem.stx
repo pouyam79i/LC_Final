@@ -1,0 +1,107 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/University/Logic Circuit/Lab/Prject/LC_Final/project/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to E:/University/Logic Circuit/Lab/Prject/LC_Final/project/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: healthCareSystem.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\mux2x1.v" into library work
+Parsing module <multiplexer2x1>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\fulladder.v" into library work
+Parsing module <fullAdder>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\decoder2x4.v" into library work
+Parsing module <decoder2x4>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\mux8bit.v" into library work
+Parsing module <multiplexer8bit2x1>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\multiplexer4x1.v" into library work
+Parsing module <multiplexer4x1>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\decoder4x16.v" into library work
+Parsing module <decoder4x16>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\comp3bit.v" into library work
+Parsing module <comparator_3bit>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\adder8bit.v" into library work
+Parsing module <Adder8bit>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\adder4bit.v" into library work
+Parsing module <Adder4bit>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\temperatureCalculator.v" into library work
+Parsing module <temperatureCalculator>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\temperatureAnalyzer.v" into library work
+Parsing module <temperatureAnalyzer>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\PressureAnalyzer.v" into library work
+Parsing module <PressureAnalyzer>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\ParityErrorChecker.v" into library work
+Parsing module <ParityErrorChecker>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\multiplexer2x1_vesion2.v" into library work
+Parsing module <multiplexer2x1_vesion2>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\comp8bit.v" into library work
+Parsing module <comparator_8bit>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\co.v" into library work
+Parsing module <countingOnes>.
+WARNING:HDLCompiler:327 - "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\co.v" Line 34: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\bloodTypeClassification.v" into library work
+Parsing module <bloodTypeClassification>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\bloodPHAnalyzer.v" into library work
+Parsing module <bloodPHAnalyzer>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\absC.v" into library work
+Parsing module <absoluteCalculator>.
+WARNING:HDLCompiler:327 - "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\absC.v" Line 30: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\temperatureAbnormalityDetector.v" into library work
+Parsing module <temperatureAbnormalityDetector>.
+WARNING:HDLCompiler:370 - "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\temperatureAbnormalityDetector.v" Line 27: Empty port in module declaration
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\pressureAbnormalityDetector.v" into library work
+Parsing module <pressureAbnormalityDetector>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\gic.v" into library work
+Parsing module <glycemicIndexCalculator>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\fd.v" into library work
+Parsing module <fallingDetector>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\bloodAbnormalityDetector.v" into library work
+Parsing module <bloodAbnormalityDetector>.
+Analyzing Verilog file "E:\University\Logic Circuit\Lab\Prject\LC_Final\project\healthCareSystem.v" into library work
+Parsing module <healthCareSystem>.
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.73 secs
+ 
+--> 
+
+Total memory usage is 4470588 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

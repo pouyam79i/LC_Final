@@ -2,14 +2,14 @@ Command line:
    tb_heading_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52735
+     -socket  50775
 
-Thu Jul 22 00:22:11 2021
+Thu Jul 22 17:10:07 2021
 
 
  Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 5153.66 Meg
+ Current Memory Usage: 5153.67 Meg
 
  Total Signals          : 38
  Total Nets             : 53
@@ -22,7 +22,7 @@ Thu Jul 22 00:22:11 2021
 
  Total Simulation Time: 0.078125 sec
 
- Current Memory Usage: 5153.66 Meg
+ Current Memory Usage: 5153.67 Meg
 
-Thu Jul 22 00:22:24 2021
+Thu Jul 22 17:10:20 2021
 

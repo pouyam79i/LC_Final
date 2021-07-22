@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_hcs.xst" -ofn "E:/University/Logic Circuit/Lab/Prject/LC_Final/project/tb_hcs.syr" 
